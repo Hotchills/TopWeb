@@ -15,3 +15,6 @@ nbproject/project.properties
 nbproject/project.xml
 app/Providers/AppServiceProvider.php
 app/Providers/AppServiceProvider.php
+composer.lock
+composer.json
+app/Providers/AppServiceProvider.php
