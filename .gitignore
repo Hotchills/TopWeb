@@ -9,3 +9,9 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+nbproject/private/config.properties
+nbproject/private/private.properties
+nbproject/project.properties
+nbproject/project.xml
+app/Providers/AppServiceProvider.php
+app/Providers/AppServiceProvider.php
