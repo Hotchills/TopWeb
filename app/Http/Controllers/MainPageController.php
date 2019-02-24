@@ -8,7 +8,7 @@ use Session;
 use App\Page;
 use Illuminate\Validation\Rule;
 
-class MainPageController extends Controller {
+class MainPageController extends \TCG\Voyager\Http\Controllers\Controller {
 
     /**
      * Display a listing of the resource.
