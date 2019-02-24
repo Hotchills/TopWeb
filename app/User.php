@@ -18,7 +18,9 @@ class User extends \TCG\Voyager\Models\User {
         'name', 'username', 'email', 'password',
     ];
     protected $casts = [
-        'isAdmin' => 'integer',
+       // 'isAdmin' => 'integer',
+          'email_verified_at' => 'datetime',
+           'settings' => 'json'
     ];
     /**
      * The attributes that should be hidden for arrays.
