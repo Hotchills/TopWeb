@@ -9,7 +9,7 @@ use App\Page;
 use Illuminate\Validation\Rule;
 use \TCG\Voyager\SRC\Http\Controllers\Voyager;
 
-class MainPageController extends \TCG\VoyagerSRC\Http\Controllers\Controller {
+class MainPageController extends \TCG\Voyager\Http\Controllers\Controller {
 
     /**
      * Display a listing of the resource.
