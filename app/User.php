@@ -30,9 +30,9 @@ class User extends \TCG\Voyager\Models\User {
     protected $hidden = [
         'password', 'remember_token',
     ];
-    public function isAdmin(){
-        return $this->isAdmin;     
-    }
+  //  public function isAdmin(){
+ //       return $this->isAdmin;     
+  //  }
 
     public function comments() {
         return $this->hasMany('App\Comment', 'user_id', 'id');

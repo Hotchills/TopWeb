@@ -39,7 +39,7 @@ Route::get('/{main}/CreatePage',['as' => 'CreatePage' , 'uses' => 'PageControlle
 Route::get('/{main}/{page}/CreateTop',['as' => 'CreateTop' , 'uses' =>  'TopController@index1']);
 Route::get('/{main}/{page}/AddMovieInDB',['as' => 'AddMovieInDB' , 'uses' =>  'MovieController@index']);
 //dinamic :
-Route::get('/{main}', 'MainPageController@index');
+Route::get('/{main}', 'MainPageController@mainpage');
 Route::get('/{main}/{slug}', 'PageController@index');
 Route::get('/{main}/{slug}/{top}', 'TopController@index');
 

@@ -15,12 +15,12 @@ class MainPageController extends Controller {
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct()
-     {
+  //  public function __construct()
+  //   {
    //  $this->middleware('auth',['except'=>'index']); 
-     $this->middleware('admin', ['except' => ['index']]);
-   }
-    public function index($main) {
+  //   $this->middleware('admin', ['except' => ['index']]);
+ //  }
+    public function mainpage($main) {
 
 
         if ($mainpage = MainPage::where('name', $main)->first()) {       
@@ -33,6 +33,11 @@ class MainPageController extends Controller {
     public function index1() {
         //
         return view('CreateMainPage');
+    }
+    public function index() {
+        //
+        $AllMainPages= MainPage::all();
+        return view($AllMainPages);
     }
 
     /**
