@@ -48,7 +48,7 @@ Route::get('/{main}/{slug}/{top}', 'TopController@index');
 Route::post('/AddProfileInfo', ['uses'=> 'UserProfileController@store','as'=>'profileinfo.store' ]);
 Route::post('/CreatePage', ['uses'=> 'PageController@store','as'=>'page.store' ]);
 Route::post('/CreateTop', ['uses'=> 'TopController@store','as'=>'top.store' ]);
-Route::post('/CreateMainPage', ['uses'=> 'MainPageController@store','as'=>'mainpage.store' ]);
+Route::post('/CreateMainPage', ['uses'=> 'MainPageController@mainstore','as'=>'mainpage.store' ]);
 Route::post('/{top_id}/comment' , ['uses'=> 'CommentController@store','as'=>'comment.store' ]);
 Route::post('/{top_id}/{parent_id}/comment' , ['uses'=> 'CommentController@storereplay','as'=>'comment.storereplay' ]);
 Route::post('/incrementvote' , 'CommentController@incrementvote');
