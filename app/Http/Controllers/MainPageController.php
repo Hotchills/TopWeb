@@ -35,7 +35,7 @@ class MainPageController extends Controller {
         return view('CreateMainPage');
     }
     public function index() {
-        //
+        //Voyager mainpage 
         $AllMainPages= MainPage::all();
         return view('/vendor/voyager/mainpage/mainpage');
     }
