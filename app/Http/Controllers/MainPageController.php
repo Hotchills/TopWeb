@@ -37,7 +37,7 @@ class MainPageController extends Controller {
     public function index() {
         //
         $AllMainPages= MainPage::all();
-        return view($AllMainPages);
+        return view('mainpage');
     }
 
     /**
